@@ -50,6 +50,39 @@ To embark on your journey with GPR-ARC:
    python gpr_arc.py
    ```
 
+## Troubleshooting Guide
+
+Encountering issues while setting up or operating your GPR (Ground Penetrating Radar) system can be frustrating. This guide aims to help troubleshoot common problems that might arise when using the GPR-ARC software with your NIC (Network Interface Controller). Follow these steps to ensure a smooth operation:
+
+### Environment Setup Issues
+
+1. **Python Not Installed or Outdated**: Make sure Python 3.6 or newer is installed. Use `python --version` to check your current version. If it's not installed or outdated, download the latest version from the official Python website.
+
+2. **Missing Libraries**: If you encounter errors related to missing `requests` or `numpy` libraries, ensure they are installed by running `pip install requests numpy`. If `pip` is not recognized, verify that Python and Pip are correctly installed and added to your system's PATH.
+
+3. **Network Configuration**: Verify the NIC500 device is properly connected to your network. If the device is not communicating, check your network cables, router settings, and ensure the device's IP address is correctly configured. Adjust the script's `IP_ADDRESS` variable if your device uses a different IP.
+
+4. **NIC500 Not in SDK Mode**: If the script cannot communicate with the NIC500, ensure the device is in SDK mode. Consult the NIC500's user manual for instructions on enabling SDK mode, as this step is crucial for programmatic control.
+
+### Running the Script Issues
+
+1. **Script Fails to Open**: Ensure your text editor or IDE is correctly installed and functioning. If you cannot open the script, check for any software updates or try reinstalling the editor.
+
+2. **Incorrect IP Address or Parameters**: Double-check the `IP_ADDRESS` and `GPR_CONFIG` in the script. Incorrect settings can lead to communication failures or incorrect data acquisition setups. Ensure these settings match your specific hardware and research needs.
+
+3. **Script Not Executing**: If the script doesn't run or stops with an error, make sure you're in the correct directory in your terminal or command prompt. Use `cd path/to/script` to navigate to the script's folder. Check for syntax errors or missing dependencies in the error messages provided.
+
+4. **No Output or Error Messages**: If the script runs but doesn't produce any output or displays error messages, verify your device's connectivity and ensure it's powered on. Check the console or log messages for clues on what might be wrong.
+
+### Data Acquisition and Extraction Issues
+
+1. **Data Acquisition Not Starting**: Ensure the data acquisition command is correctly implemented in the script and that the GPR device is ready for data collection. Check the device's status lights or interface to confirm it's in the correct mode for data acquisition.
+
+2. **Not Receiving Data**: If data is not being received as expected, verify the data socket connection details, including the port number and IP address. Ensure your firewall or network settings are not blocking the connection. Test the socket connection separately using a network tool or a simple socket test script.
+
+By following these troubleshooting steps, you should be able to identify and resolve common issues encountered when configuring and operating the GPR through the NIC. Remember, careful setup and attention to detail are key to successful data acquisition and analysis with GPR-ARC.
+
+
 ## Contributing
 
 As part of my PhD journey, GPR-ARC is a testament to the power of open collaboration. Your contributions, whether they be new features, improvements, or bug reports, are invaluable. Please feel free to reach out, submit an issue, or pull request.
