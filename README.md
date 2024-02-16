@@ -2,7 +2,7 @@
 
 Welcome to **GPR-ARC**, the pinnacle of innovation in Ground Penetrating Radar (GPR) data acquisition and analysis, meticulously crafted as part of my PhD work in Electrical and Computer Engineering. GPR-ARC embodies a novel approach to controlling GPR devices, processing data, and employing advanced computational techniques, including artificial intelligence and machine learning, to unveil the secrets hidden beneath the surface.
 
-<p align="center">```
+```
 
 ███████╗██╗██╗   ██╗               █████╗ ██████╗  ██████╗
 ██╔════╝██║██║   ██║              ██╔══██╗██╔══██╗██╔════╝
@@ -12,7 +12,7 @@ Welcome to **GPR-ARC**, the pinnacle of innovation in Ground Penetrating Radar (
 ╚═╝     ╚═╝ ╚═════╝               ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
                                                           
 
-```</p>
+```
 
 ## Core Features
 
