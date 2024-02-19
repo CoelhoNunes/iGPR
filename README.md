@@ -78,9 +78,10 @@ Encountering issues while setting up or operating your GPR (Ground Penetrating R
   response = requests.get(url, verify=False)  # For GET
   response = requests.put(url, json=data, verify=False)  # For PUT
    ```
-  **Note: If disabling SSL verification resolves your issue, consider properly handling SSL certificates, such as adding your device's certificate to the trusted store, or configuring your script to use a custom CA bundle for verification.**
-
+**Note**: If disabling SSL verification resolves your issue, consider properly handling SSL certificates, such as adding your device's certificate to the trusted store, or configuring your script to use a custom CA bundle for verification.
+ 
 **Socket Connection**: If the error arises from the socket.connect line, verify that the device is configured to accept connections on the specified port. If you're not sure, consult the device's documentation or your network administrator to ensure the port is correctly configured and not blocked by a firewall.
+
 
 ### Running the Script Issues
 
