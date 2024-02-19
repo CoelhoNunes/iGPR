@@ -72,7 +72,7 @@ To embark on your journey with GPR-ARC:
   telnet 192.000.00.000 8080
    ```
   **SSL/TLS Certificate Verification**: Temporarily disable SSL certificate verification as a troubleshooting step (remember, this is not secure and should only be used for debugging purposes). Modify your send_request function:
-    ```sh
+  ```sh
   response = requests.get(url, verify=False)  # For GET
   response = requests.put(url, json=data, verify=False)  # For PUT
    ```
