@@ -25,7 +25,7 @@ Welcome to **GPR-ARC**, the pinnacle of innovation in Ground Penetrating Radar (
 
 ## What's Next?
 
-- **Deep Learning for Subsurface Analysis**: Implement deep neural networks to automatically identify and classify subsurface features with unprecedented accuracy.
+- **Deep Learning for Subsurface Analysis**: Implement deep neural networks to identify and classify subsurface features with unprecedented accuracy automatically.
 - **Virtual Reality (VR) Integration**: Step into your data with VR support, offering an immersive way to analyze and interpret GPR findings.
 - **Automated Survey Path Planning**: Integrate automated path planning for unmanned aerial vehicles (UAVs) and robotic systems, optimizing data collection.
 - **Collaborative Platform**: A web-based platform for sharing, annotating, and discussing GPR datasets within the research community.
@@ -52,15 +52,13 @@ To embark on your journey with GPR-ARC:
 
 ## Troubleshooting Guide
 
-Encountering issues while setting up or operating your GPR (Ground Penetrating Radar) system can be frustrating. This guide aims to help troubleshoot common problems that might arise when using the GPR-ARC software with your NIC (Network Interface Controller). Follow these steps to ensure a smooth operation:
-
 ### Environment Setup Issues
 
-1. **Python Not Installed or Outdated**: Make sure Python 3.6 or newer is installed. Use `python --version` to check your current version. If it's not installed or outdated, download the latest version from the official Python website.
+1. **Python Not Installed or Outdated**: Make sure Python 3.6 or newer is installed. Use `python --version` to check your current version. If it still needs to be installed or updated, download the latest version from the official Python website.
 
 2. **Missing Libraries**: If you encounter errors related to missing `requests` or `numpy` libraries, ensure they are installed by running `pip install requests numpy`. If `pip` is not recognized, verify that Python and Pip are correctly installed and added to your system's PATH.
 
-3. **Network Configuration**: Verify the NIC500 device is properly connected to your network. If the device is not communicating, check your network cables, router settings, and ensure the device's IP address is correctly configured. Adjust the script's `IP_ADDRESS` variable if your device uses a different IP.
+3. **Network Configuration**: Verify the NIC500 device is properly connected to your network. If the device is not communicating, check your network cables and router settings and ensure the device's IP address is correctly configured. Adjust the script's `IP_ADDRESS` variable if your device uses a different IP.
 
 4. **NIC500 Not in SDK Mode**: If the script cannot communicate with the NIC500, ensure the device is in SDK mode. Consult the NIC500's user manual for instructions on enabling SDK mode, as this step is crucial for programmatic control.
 
@@ -78,6 +76,7 @@ Encountering issues while setting up or operating your GPR (Ground Penetrating R
   response = requests.get(url, verify=False)  # For GET
   response = requests.put(url, json=data, verify=False)  # For PUT
    ```
+
 **Note**: If disabling SSL verification resolves your issue, consider properly handling SSL certificates, such as adding your device's certificate to the trusted store, or configuring your script to use a custom CA bundle for verification.
  
 **Socket Connection**: If the error arises from the socket.connect line, verify that the device is configured to accept connections on the specified port. If you're not sure, consult the device's documentation or your network administrator to ensure the port is correctly configured and not blocked by a firewall.
@@ -104,7 +103,7 @@ By following these troubleshooting steps, you should be able to identify and res
 
 ## Contributing
 
-As part of my PhD journey, GPR-ARC is a testament to the power of open collaboration. Your contributions, whether they be new features, improvements, or bug reports, are invaluable. Please feel free to reach out, submit an issue, or pull request.
+As part of my PhD journey, GPR-ARC is a testament to the power of open collaboration. Your contributions, whether they be new features, improvements, or bug reports, are invaluable. Please feel free to reach out, submit an issue, or pull a request.
 
 ## Support and Community
 
