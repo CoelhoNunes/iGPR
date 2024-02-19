@@ -64,6 +64,24 @@ Encountering issues while setting up or operating your GPR (Ground Penetrating R
 
 4. **NIC500 Not in SDK Mode**: If the script cannot communicate with the NIC500, ensure the device is in SDK mode. Consult the NIC500's user manual for instructions on enabling SDK mode, as this step is crucial for programmatic control.
 
+5. **Network Resources**: Since the script is making network requests to a specific IP address and port, ensure that the target device (NIC with IP ADRESS) is reachable and the specified ports are open. The error might be misleading if it's thrown by the socket.connect method, which might fail if the IP address or port is incorrect, or the device is not reachable in your network.
+
+6.**SSL/TLS Certificates**: Your script uses HTTPS ("https://{IP_ADDRESS}:8080/api") for requests. If your NIC device uses a self-signed certificate or a certificate not recognized by Python's requests library, it could lead to issues not typically indicated by [Errno 2]. You might need to either add the certificate to your trusted certificates or modify the script to ignore SSL certificate verification (not recommended for production environments). 
+
+  **Check Network Accessibility: Use tools like ping or telnet to ensure the NIC device is reachable**
+  ```sh
+  ping 192.000.00.000
+  telnet 192.000.00.000 8080
+   ```
+  **SSL/TLS Certificate Verification**: Temporarily disable SSL certificate verification as a troubleshooting step (remember, this is not secure and should only be used for debugging purposes). Modify your send_request function:
+    ```sh
+  response = requests.get(url, verify=False)  # For GET
+  response = requests.put(url, json=data, verify=False)  # For PUT
+   ```
+  **Note: If disabling SSL verification resolves your issue, consider properly handling SSL certificates, such as adding your device's certificate to the trusted store, or configuring your script to use a custom CA bundle for verification.**
+
+**Socket Connection**: If the error arises from the socket.connect line, verify that the device is configured to accept connections on the specified port. If you're not sure, consult the device's documentation or your network administrator to ensure the port is correctly configured and not blocked by a firewall.
+
 ### Running the Script Issues
 
 1. **Script Fails to Open**: Ensure your text editor or IDE is correctly installed and functioning. If you cannot open the script, check for any software updates or try reinstalling the editor.
