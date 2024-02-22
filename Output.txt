@@ -1,0 +1,76 @@
+/usr/local/bin/python3.11 /Users/coelho/Desktop/Spr24/Deep Learning/Assignments/iGPR_2024/iGPR_main.py
+Response from API command: True
+
+In NIC SDK Mode!
+Response from NIC's System Information command: The command executed successfully
+
+System Information:
+App DIP: 2018-00023-04
+App Version: 1.5.1231
+FPGA Version: 2018-00023-04
+Hardware ID: 29
+Kernel Version: 3.10.17
+NIC Serial Number: 801F12F719D3
+OS DIP: 0091-3254-1003
+OS Version: 2017-00041-09
+SmcApi: 2.11.622
+
+Response from Power command: The command executed successfully
+
+Response from GPR System Information command: The command executed successfully
+
+GPR System Information:
+App Code DIP: 2016-00085-05
+App Code Version: 4.066
+DEV0:
+	App Code DIP: 2004-00229-01
+	Type: tx
+	Unit Serial Number: 004830321004
+DEV1:
+	App Code DIP: 2004-00226-02
+	Type: rx
+	Unit Serial Number: 004830321004
+GIC Serial Number: 008530051033
+Unit Serial Number: 004830321004
+Window Time Shift Reference (ps): -47615
+
+Response from GPR Data Socket command: The command executed successfully
+
+Response from Setup command: The command executed successfully
+
+Response from Start Acquisition command: The command executed successfully
+
+Trace Header: tv_sec: 1708604346 tv_nsec: 446991330 trace_num: 1 status: 0 stacks: 4 header_size: 20
+First ten points (mV): -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0, -50.0
+
+Trace Header: tv_sec: 1708604347 tv_nsec: 447072997 trace_num: 2 status: 0 stacks: 4 header_size: 20
+First ten points (mV): -17.410278, -17.388916, -17.384338, -17.36908, -17.355347, -17.35382, -17.340088, -17.320251, -17.308044, -17.285156
+
+Trace Header: tv_sec: 1708604348 tv_nsec: 447064664 trace_num: 3 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.064086914, 0.059509277, 0.0579834, 0.04425049, 0.06713867, 0.04425049, 0.03967285, 0.047302246, 0.0579834, 0.059509277
+
+Trace Header: tv_sec: 1708604349 tv_nsec: 447058331 trace_num: 4 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.07019043, 0.11138916, 0.062561035, 0.090026855, 0.10986328, 0.09765625, 0.0869751, 0.09460449, 0.0869751, 0.090026855
+
+Trace Header: tv_sec: 1708604350 tv_nsec: 447073331 trace_num: 5 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.07171631, 0.09918213, 0.0869751, 0.09918213, 0.0793457, 0.09918213, 0.090026855, 0.08850098, 0.09613037, 0.09765625
+
+Trace Header: tv_sec: 1708604351 tv_nsec: 447068331 trace_num: 6 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.105285645, 0.105285645, 0.11138916, 0.11291504, 0.09765625, 0.09765625, 0.09307861, 0.08392334, 0.091552734, 0.091552734
+
+Trace Header: tv_sec: 1708604352 tv_nsec: 447066331 trace_num: 7 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.08239746, 0.09460449, 0.09918213, 0.10986328, 0.117492676, 0.09307861, 0.09307861, 0.09460449, 0.09307861, 0.0869751
+
+Trace Header: tv_sec: 1708604353 tv_nsec: 447073998 trace_num: 8 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.0869751, 0.09307861, 0.11444092, 0.090026855, 0.08850098, 0.105285645, 0.07324219, 0.08239746, 0.0869751, 0.10986328
+
+Trace Header: tv_sec: 1708604354 tv_nsec: 447062998 trace_num: 9 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.08087158, 0.09460449, 0.08087158, 0.09918213, 0.11444092, 0.09765625, 0.10070801, 0.117492676, 0.09307861, 0.103759766
+
+Trace Header: tv_sec: 1708604355 tv_nsec: 447064665 trace_num: 10 status: 0 stacks: 4 header_size: 20
+First ten points (mV): 0.11138916, 0.09765625, 0.076293945, 0.1159668, 0.103759766, 0.0869751, 0.12664795, 0.07019043, 0.0793457, 0.090026855
+
+Response from Stop Acquisition command: The command executed successfully
+
+
+Process finished with exit code 0
