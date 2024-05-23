@@ -3,7 +3,7 @@ import socket
 import struct
 import numpy as np
 
-# Constants and Endpoints Configurationn
+# Constants and Endpoints Configuration
 IP_ADDRESS = '192.168.20.221'
 BASE_URL = f"https://{IP_ADDRESS}:8080/api"
 ENDPOINTS = {
