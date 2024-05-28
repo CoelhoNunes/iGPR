@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time GPR Data (COELHO) </title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+    <h1>Real-Time GPR Data</h1>
+    <pre id="data">Waiting for data...</pre>
+
+    <script>
+        const socket = io('http://localhost:5000');
+
+        socket.on('data', (trace) => {
+            document.getElementById('data').innerText = JSON.stringify(trace, null, 2);
+        });
+
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+    </script>
+</body>
+</html>
