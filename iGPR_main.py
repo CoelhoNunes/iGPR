@@ -15,7 +15,7 @@ The script performs the following steps:
 4. Read system information from the GPR and print it to console.
 5. Connect to the data socket
 6. Set up with GPR  settings for a 1000 MHz system.
-    points per trace: 200
+    points per trace: 200 
     time sampling interval: 100 ps 
     stacks: 4
     period: 1 s
