@@ -4,6 +4,7 @@ from sdk_interaction import NIC500SDK
 import threading
 
 app = Flask(__name__)
+
 socketio = SocketIO(app)
 sdk = NIC500SDK('192.168.20.221')
 

@@ -55,6 +55,7 @@ class NIC500SDK:
             print("Not in NIC SDK Mode")
             return False
         print("In NIC SDK Mode!")
+
         return True
 
     def power_on_gpr(self):
