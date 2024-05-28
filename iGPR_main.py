@@ -11,7 +11,7 @@ The script performs the following steps:
 
 1. Get the SDK version information and confirm the NIC-500 is in SDK mode
 2. Read system information from the NIC and print it to console.
-3. Power on the GPR.
+3. Power on the GPR
 4. Read system information from the GPR and print it to console.
 5. Connect to the data socket
 6. Set up with GPR  settings for a 1000 MHz system.
